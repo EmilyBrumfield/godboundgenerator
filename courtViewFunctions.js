@@ -8,11 +8,11 @@ function renderCourt(court) {
 	$("#results").append("<div id=" + resultNumber + "></div>");
 
 	// Render each item into the new div.
-	$(`#${resultNumber}`).append(`<p class="courttype">Court Type: ${ court[ 'type' ] } </p>`);
-	$(`#${resultNumber}`).append(`<p class="powerstructure">Power Structure: ${ court[ 'power structure' ] }</p>`);
-	$(`#${resultNumber}`).append(`<p class="firstChart">${ court[ 'firstChart heading'] }: ${ court[ 'firstChart' ] }</p>`);
-	$(`#${resultNumber}`).append(`<p class="consequences">Consequence of its Destruction: ${ court[ 'consequence' ] }</p>`);
-	$(`#${resultNumber}`).append(`<p class="defenses">Court Defenses: ${ court[ 'defense' ] }</p>`);
+	$(`#${resultNumber}`).append(`<p class="courttype"><span class="linestart">Court Type:</span> ${ court[ 'type' ] } </p>`);
+	$(`#${resultNumber}`).append(`<p class="powerstructure"><span class="linestart">Power Structure:</span> ${ court[ 'power structure' ] }</p>`);
+	$(`#${resultNumber}`).append(`<p class="firstChart"><span class="linestart">${ court[ 'firstChart heading'] }:</span> ${ court[ 'firstChart' ] }</p>`);
+	$(`#${resultNumber}`).append(`<p class="consequences"><span class="linestart">Consequence of its Destruction:</span> ${ court[ 'consequence' ] }</p>`);
+	$(`#${resultNumber}`).append(`<p class="defenses"><span class="linestart">Court Defenses:</span> ${ court[ 'defense' ] }</p>`);
 
 	// renderActors function adds html table for actors.
 	renderActors( court, resultNumber);
