@@ -22,6 +22,10 @@
     width: 25%;
 }
 
+.header {
+    text-align: center;
+}
+
 .linestart {
     font-weight: bold;
 }
